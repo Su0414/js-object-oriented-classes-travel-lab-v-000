@@ -22,6 +22,6 @@ class Route{
     let end = 0
 
 
-    return (endingLocation.vertical - beginningLocation.vertical) + (end - start)
+    return (this.endingLocation.vertical - this.beginningLocation.vertical) + (end - start)
   }
 }
