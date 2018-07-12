@@ -22,12 +22,7 @@ class Route{
     let end = 0
 
     eastWest.forEach(location, index){
-      if(location === beginningLocation.horizontal){
-          start = index
-      }
-      if(location === endingLocation.horizontal){
-              end = index
-      }
+
     };
     return (endingLocation.vertical - beginningLocation.vertical) + (end - start)
   }
