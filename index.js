@@ -16,6 +16,10 @@ class Route{
     this.beginningLocation = beginningLocation
     this.endingLocation =  endingLocation
   }
+
+  findIndex(avenue){
+    return eastWest.indexOf(avenue)
+  }
   blocksTravelled(){
     let start = 0
     let end = 0
