@@ -21,6 +21,9 @@ class Route{
     let start = 0
     let end = 0
 
+    eastWest.forEach(function (location){
+
+    });
 
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (end - start)
   }
