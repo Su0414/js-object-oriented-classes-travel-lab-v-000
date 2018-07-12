@@ -20,7 +20,7 @@ class Route{
 
     let start = 0
     let end = 0
-    counter = 0
-    
+    let counter = 0
+
   }
 }
