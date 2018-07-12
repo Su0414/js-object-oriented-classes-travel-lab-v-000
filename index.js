@@ -24,10 +24,9 @@ class Route{
     let start = 0
     let end = 0
 
-    eastWest.forEach(function (element, index, array) {
-      if(element === this.beginningLocation.horizontal){start = index}
-      if(element === this.endingLocation.horizontal){end = index}
-    });
+    start = findIndex(this.beginningLocation.horizontal)
+    end = findIndex(this.endingLocation.horizontal)
+
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (end - start)
   }
 
