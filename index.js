@@ -22,12 +22,8 @@ class Route{
   }
 
   blocksTravelled(){
-    let start = 0
-    let end = 0
-
-    start = this.findIndexEastWest(this.beginningLocation.horizontal)
-    end = this.findIndexEastWest(this.endingLocation.horizontal)
-
+    let start = this.findIndexEastWest(this.beginningLocation.horizontal)
+    let end = this.findIndexEastWest(this.endingLocation.horizontal)
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (end - start)
   }
 
