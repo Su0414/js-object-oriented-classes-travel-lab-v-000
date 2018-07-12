@@ -21,10 +21,13 @@ class Route{
     let start = 0
     let end = 0
 
-    eastWest.forEach(function (location){
-
+    eastWest.forEach(function (element, index, array) {
+      if(element == beginningLocation.horizontal){start = index}
+      if(element == endingLocation.horizontal){end = index}
     });
-
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (end - start)
   }
+
+  
+
 }
