@@ -17,15 +17,16 @@ class Route{
     this.endingLocation =  endingLocation
   }
 
-  findIndex(avenue){
+  findIndexEastWest(avenue){
     return eastWest.indexOf(avenue)
   }
+
   blocksTravelled(){
     let start = 0
     let end = 0
 
-    start = findIndex(this.beginningLocation.horizontal)
-    end = findIndex(this.endingLocation.horizontal)
+    start = this.findIndexEastWest(this.beginningLocation.horizontal)
+    end = this.findIndexEastWest(this.endingLocation.horizontal)
 
     return (this.endingLocation.vertical - this.beginningLocation.vertical) + (end - start)
   }
