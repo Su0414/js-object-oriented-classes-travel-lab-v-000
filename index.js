@@ -18,5 +18,15 @@ class Route{
   blocksTravelled(){
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 
+    let start = 0
+    let end = 0
+
+    eastWest.forEach(location, index
+      if location == beginningLocation.horizontal
+          start = index
+      if location == endingLocation.horizontal
+              end = index
+    );
+    return (endingLocation.vertical - beginningLocation.vertical) + (end - start)
   }
 }
