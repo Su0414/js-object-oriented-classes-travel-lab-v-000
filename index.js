@@ -17,7 +17,6 @@ class Route{
     this.endingLocation =  endingLocation
   }
   blocksTravelled(){
-
     let start = 0
     let end = 0
 
